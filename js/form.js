@@ -124,7 +124,7 @@ function toggleAuthMode() {
     if (bt) bt.textContent = 'Create account';
     if (tg) tg.innerHTML = 'Already have an account? <a>Log in</a>';
     if (h) h.textContent = 'Create your account';
-    if (s) s.textContent = 'Sign up to enrol and access your dashboard';
+    if (s) s.textContent = 'Sign up to enroll and access your dashboard';
   } else {
     if (nf) nf.style.display = 'none';
     if (bt) bt.textContent = 'Sign in to Dashboard';

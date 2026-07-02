@@ -7,7 +7,7 @@
 const KB = {
   about: {
     keywords: ['what is', 'about', 'who are you', 'tell me', 'mba partner', 'explain', 'overview', 'initiative'],
-    answer: `MBA Partner is an initiative by alumni of old IIMs (IIM A, B, C and more). We help MBA students land placements at top companies through:\n\n• Live consulting projects (real CV points)\n• Case competition mentorship (AIR 1 mentor)\n• Placement bootcamps (mock PIs, GDs)\n• Domain coaching across Finance, Consulting, Marketing, HR & more\n\nWe've mentored 5,000+ students with a 9.6/10 rating and 98.7% placed in target domain.`
+    answer: `MBA Partner is an initiative by alumni of old IIMs (IIM A, B, C and more). We help MBA students land placements at top companies through:\n\n• Live Projects Across Domains (real CV points)\n• Case Competition Mentorship (AIR 1 mentor)\n• Placements Bootcamp (mock PIs, GDs)\n• Domain coaching across Finance, Consulting, Marketing, HR & more\n\nWe've mentored 5,000+ students with a 9.6/10 rating and 98.7% placed in target domain.`
   },
   courses: {
     keywords: ['course', 'program', 'programme', 'offer', 'service', 'what do you', 'enroll', 'join', 'bootcamp', 'project', 'case', 'certification', 'excel', 'power bi'],

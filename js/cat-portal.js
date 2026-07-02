@@ -181,7 +181,7 @@ function renderPricing(d){
       <div class="cp-price-plan">${p.Plan}</div>
       <div class="cp-price-amt">${free?'Free':'₹'+Number(p.Price).toLocaleString('en-IN')}<span>${free?'':'/'+ (p.Period||'')}</span></div>
       <ul class="cp-price-feats">${String(p.Features||'').split('|').filter(Boolean).map(f=>`<li><i class="ti ti-check"></i> ${f}</li>`).join('')}</ul>
-      <a class="cp-price-btn" href="tel:+917042732092">${free?'Start free':'Enrol now'}</a>
+      <a class="cp-price-btn" href="tel:+917042732092">${free?'Start free':'Enroll now'}</a>
     </div>`;}).join('');
 }
 

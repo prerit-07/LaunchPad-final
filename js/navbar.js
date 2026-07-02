@@ -164,7 +164,7 @@ const HOF = [
   {name:'Rutuja Thorat',school:'IIM Calcutta',company:'Accenture Strategy',quote:'MBA Partner cleared the information asymmetry for me. Got into Accenture Strategy for my SIP.',img:'https://static.wixstatic.com/media/67e5e0_cd37e4ff87d54ce2bef947d27e341bbd~mv2.jpg/v1/crop/x_0,y_507,w_1571,h_938/fill/w_550,h_329,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG-20241218-WA0007_edited.jpg'},
 ];
 
-const TICKERS=['9.6/10 Avg. Rating','5,000+ Students Mentored','98.7% Placed in Desired Domain','IIM · XLRI · FMS Mentor Schools','Live Consulting Projects with Prodmark','AIR 1 Case Competition Mentor','30+ Winning Case PPTs','Real Placements. Real Stories.'];
+const TICKERS=['9.6/10 Avg. Rating','5,000+ Students Mentored','98.7% Placed in Desired Domain','IIM · XLRI · FMS Mentor Schools','Live Projects Across Domains','AIR 1 Case Competition Mentor','30+ Winning Case PPTs','Real Placements. Real Stories.'];
 
 /* ===== UTILS ===== */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.1});

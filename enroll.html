@@ -241,9 +241,13 @@ button{cursor:pointer;font-family:inherit}
 .footer{background:var(--navy);padding:40px 0 24px}
 .footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.1);padding-top:20px}
 .footer-bottom p{font-size:12px;color:rgba(255,255,255,.4);font-family:'Inter',sans-serif}
-.footer-social{display:flex;gap:10px}
-.footer-social a{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.6);font-size:16px;transition:.2s}
-.footer-social a:hover{background:var(--orange);color:#fff}
+.footer-social{display:flex;gap:12px;align-items:center}
+.footer-social a{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;transition:transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), filter 0.2s}
+.footer-social a:hover{transform:translateY(-3px);filter:brightness(1.1);color:#fff}
+.footer-social a.whatsapp{background:#25D366}
+.footer-social a.telegram{background:#0088cc}
+.footer-social a.instagram{background:linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)}
+.footer-social a.linkedin{background:#0077B5}
 </style>
 </head>
 <body>
@@ -472,8 +476,10 @@ button{cursor:pointer;font-family:inherit}
     <div class="footer-bottom">
       <p>© 2026 MBA Partner. Initiative by Alumni of Old IIMs. All rights reserved.</p>
       <div class="footer-social">
-        <a href="https://chat.whatsapp.com/EdyvGJbQoV9Jj6eC0slSx9" target="_blank"><i class="ti ti-brand-whatsapp"></i></a>
-        <a href="https://t.me/+IrnzgXdUKqsyOTZl" target="_blank"><i class="ti ti-brand-telegram"></i></a>
+        <a href="https://chat.whatsapp.com/EdyvGJbQoV9Jj6eC0slSx9" target="_blank" class="whatsapp"><i class="ti ti-brand-whatsapp"></i></a>
+        <a href="https://t.me/+IrnzgXdUKqsyOTZl" target="_blank" class="telegram"><i class="ti ti-brand-telegram"></i></a>
+        <a href="https://documents1.netlify.app/" target="_blank" class="instagram"><i class="ti ti-brand-instagram"></i></a>
+        <a href="https://documents1.netlify.app/" target="_blank" class="linkedin"><i class="ti ti-brand-linkedin"></i></a>
       </div>
     </div>
   </div>
@@ -512,7 +518,7 @@ function renderGrid(){
   document.getElementById('enrollGrid').innerHTML=list.map(c=>`
     <div class="course-card${c.badge==='Best Value'?' featured':''}">
       <div class="card-img-wrap">
-        ${c.img&&c.img.indexOf('images/')===0?`<img class="card-img" src="${c.img.replace('images/','images/cards/')}" alt="${c.title}" loading="lazy"/>`:`<div class="course-art cat-${c.cat}"><i class="ti ${CAT_ICON[c.cat]||'ti-school'} cv-mark"></i><div class="cv-info"><span class="cv-chip">${CAT_LABEL[c.cat]||c.type}</span><div class="cv-h">${c.title}</div></div></div>`}
+        ${c.img&&c.img.indexOf('images/')===0?`<img class="card-img" src="${c.img.replace('images/','images/cards/').replace('.png','.svg')}" alt="${c.title}" loading="lazy"/>`:`<div class="course-art cat-${c.cat}"><i class="ti ${CAT_ICON[c.cat]||'ti-school'} cv-mark"></i><div class="cv-info"><span class="cv-chip">${CAT_LABEL[c.cat]||c.type}</span><div class="cv-h">${c.title}</div></div></div>`}
         ${c.badge&&!(c.img&&c.img.indexOf('images/')===0)?`<div class="card-badge">${c.badge}</div>`:''}
       </div>
       <div class="card-body">
